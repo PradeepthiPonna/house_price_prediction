@@ -1,0 +1,12 @@
+import pandas as pd
+
+# URL of the dataset
+url = "https://raw.githubusercontent.com/ageron/handson-ml2/master/datasets/housing/housing.csv"
+
+# Read the CSV file from the URL
+df = pd.read_csv(url)
+
+# Save it locally as 'train.csv'
+df.to_csv("train.csv", index=False)
+
+print("Dataset saved as 'train.csv' successfully!")
